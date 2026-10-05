@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Soft background halo -->
+  <circle cx="50" cy="50" r="46" fill="#fdf4f6" stroke="#f4adc0" stroke-width="2"/>
+  <!-- Outer Petals -->
+  <path d="M50 15 C45 35 25 45 15 58 C30 68 45 60 50 82 C55 60 70 68 85 58 C75 45 55 35 50 15 Z" fill="#dc5078" opacity="0.85"/>
+  <!-- Middle Petals -->
+  <path d="M50 25 C42 42 30 50 24 62 C38 68 46 62 50 78 C54 62 62 68 76 62 C70 50 58 42 50 25 Z" fill="#ea7c9b"/>
+  <!-- Inner Petals -->
+  <path d="M50 35 C46 48 38 55 35 65 C43 68 48 64 50 74 C52 64 57 68 65 65 C62 55 54 48 50 35 Z" fill="#fce7eb" stroke="#c5345d" stroke-width="1"/>
+  <!-- Center Core / Golden Stamen -->
+  <circle cx="50" cy="62" r="5" fill="#f1de4d" stroke="#ab810b" stroke-width="1.5"/>
+  <circle cx="47" cy="60" r="1.5" fill="#ab810b"/>
+  <circle cx="53" cy="60" r="1.5" fill="#ab810b"/>
+  <circle cx="50" cy="64" r="1.5" fill="#ab810b"/>
+</svg>
