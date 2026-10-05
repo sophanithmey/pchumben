@@ -10,7 +10,8 @@
     "format": "prettier --write .",
     "test": "vitest",
     "test:run": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "record:tour": "node scripts/record-tour.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

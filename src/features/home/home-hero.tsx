@@ -12,13 +12,13 @@ export const HomeHero: React.FC = () => {
   const currentActivity = ACTIVITIES.find((a) => a.key === activeKey) ?? ACTIVITIES[0]!;
 
   return (
-    <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-warmth-200/90 shadow-sm bg-gradient-to-b from-[#faf6f0] via-[#f7f0e4] to-[#f4ebe0] mb-8 min-h-screen flex flex-col justify-between p-4 sm:p-6 lg:p-8">
+    <section className="relative overflow-hidden rounded-2xl sm:rounded-3xl border border-warmth-200/90 shadow-sm bg-gradient-to-b from-[#faf6f0] via-[#f7f0e4] to-[#f4ebe0] mb-6 sm:mb-8 min-h-svh flex flex-col justify-between gap-4 p-3.5 sm:p-6 lg:p-8">
       {/* Top Banner & Cultural Identity */}
       <div className="text-center max-w-3xl mx-auto pt-2 sm:pt-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/90 border border-warmth-200/90 text-xs font-semibold text-lotus-800 shadow-2xs mb-2">
           <span className="text-sm">🪷</span>
           <span className="font-khmer">បុណ្យភ្ជុំបិណ្ឌ • កម្មវិធីឌីជីថល</span>
-          <span className="text-warmth-300">•</span>
+          <span className="text-warmth-300 hidden sm:inline">•</span>
           <span className="font-sans font-normal text-warmth-600 hidden sm:inline">
             Pchum Ben Companion
           </span>
@@ -31,16 +31,16 @@ export const HomeHero: React.FC = () => {
           </span>
         </h1>
 
-        <p className="text-xs sm:text-sm font-khmer text-warmth-800 font-medium leading-relaxed max-w-xl mx-auto mb-3 sm:mb-4">
+        <p className="text-xs sm:text-sm font-khmer text-warmth-800 font-medium leading-relaxed max-w-xl mx-auto mb-3 sm:mb-4 flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5">
           <span className="text-warmth-950 font-bold">រលឹកអតីតកាល</span>
-          <span className="text-warmth-400 mx-2">•</span>
+          <span className="text-warmth-400 hidden sm:inline">•</span>
           <span className="text-lotus-700 font-bold">អបអរបច្ចុប្បន្នកាល</span>
-          <span className="text-warmth-400 mx-2">•</span>
+          <span className="text-warmth-400 hidden sm:inline">•</span>
           <span className="text-amber-800 font-bold">បន្តប្រពៃណីទៅអនាគត</span>
         </p>
 
         {/* Activity Tab Switcher */}
-        <div className="inline-flex p-1 bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-warmth-200/90 shadow-2xs gap-1 max-w-full overflow-x-auto">
+        <div className="grid grid-cols-3 sm:inline-flex w-full sm:w-auto p-1 bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-warmth-200/90 shadow-2xs gap-1 max-w-full">
           {ACTIVITIES.map((activity) => {
             const isActive = activity.key === activeKey;
             return (
@@ -48,7 +48,7 @@ export const HomeHero: React.FC = () => {
                 key={activity.key}
                 type="button"
                 onClick={() => setActiveKey(activity.key)}
-                className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-xs sm:text-sm font-semibold transition-all whitespace-nowrap cursor-pointer ${
+                className={`flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-2 px-1.5 sm:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-[11px] leading-tight sm:text-sm font-semibold transition-all sm:whitespace-nowrap text-center cursor-pointer ${
                   isActive
                     ? 'bg-lotus-700 text-white shadow-xs'
                     : 'text-warmth-700 hover:text-warmth-950 hover:bg-warmth-100/70'
@@ -120,10 +120,10 @@ export const HomeHero: React.FC = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-2.5 pt-1">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-2.5 pt-1">
               <Link
                 to={currentActivity.primaryAction.link}
-                className="inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-lotus-700 hover:bg-lotus-800 text-white font-semibold text-xs sm:text-sm shadow-xs hover:shadow-md transition active:scale-95"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-lotus-700 hover:bg-lotus-800 text-white font-semibold text-xs sm:text-sm shadow-xs hover:shadow-md transition active:scale-95"
               >
                 <span className="font-khmer">
                   {locale === 'kh'
@@ -135,7 +135,7 @@ export const HomeHero: React.FC = () => {
 
               <Link
                 to={currentActivity.secondaryAction.link}
-                className="inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl bg-white hover:bg-warmth-100 text-warmth-800 border border-warmth-300 font-semibold text-xs sm:text-sm shadow-2xs transition active:scale-95"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-white hover:bg-warmth-100 text-warmth-800 border border-warmth-300 font-semibold text-xs sm:text-sm shadow-2xs transition active:scale-95"
               >
                 <BookOpen className="w-4 h-4 text-warmth-600" />
                 <span className="font-khmer">
