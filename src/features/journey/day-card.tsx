@@ -4,6 +4,7 @@ import { CheckCircle2, Circle, ArrowRight, Sparkles } from 'lucide-react';
 import { PchumBenDay } from '../../domain/entities/pchum-ben-day';
 import { Badge } from '../../components/ui/badge';
 import { useI18n } from '../../i18n/i18n-context';
+import { toKhmerDigits } from '../../domain/services/calendar-service';
 
 interface DayCardProps {
   day: PchumBenDay;
@@ -39,13 +40,13 @@ export const DayCard: React.FC<DayCardProps> = ({
                 : 'bg-warmth-100 text-warmth-800'
             }`}
           >
-            {day.dayNumber}
+            {locale === 'kh' ? toKhmerDigits(day.dayNumber) : day.dayNumber}
           </span>
 
           {day.isPchumBenFinalDay && (
             <Badge variant="gold" size="sm">
               <Sparkles className="w-3 h-3 mr-1" />
-              <span>បុណ្យភ្ជុំធំ (Pchum Ben)</span>
+              <span>{locale === 'kh' ? 'បុណ្យភ្ជុំធំ' : 'Pchum Ben Day'}</span>
             </Badge>
           )}
 

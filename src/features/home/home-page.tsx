@@ -9,7 +9,7 @@ import { FamilyCallout } from './family-callout';
 
 export const HomePage: React.FC = () => {
   return (
-    <div className="max-w-7xl mx-auto space-y-6">
+    <div className="max-w-7xl mx-auto space-y-4">
       <HomeHero />
       <CountdownCard />
       <CulturalHighlights />

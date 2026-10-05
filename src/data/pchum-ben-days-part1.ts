@@ -20,7 +20,7 @@ export const PCHUM_BEN_DAYS_PART1: PchumBenDay[] = [
 'Prepare white or formal attire for visiting the pagoda',
     ],
     khmerActivities: [
-'ប្រគេនចង្ហាន់ពេលព្រឹក ឬតែជូនឪពុកម្តាយ និងចាស់ទុំ',
+'រៀបចំអាហារពេលព្រឹក ឬភេសជ្ជៈជូនឪពុកម្តាយ និងចាស់ទុំ',
 'ស្វែងយល់ពីអត្ថន័យនៃរដូវកាន់បិណ្ឌ ១៥ ថ្ងៃ',
 'ត្រៀមសម្លៀកបំពាក់ពណ៌ស ឬប្រពៃណីសម្រាប់ទៅវត្ត',
     ],
@@ -41,7 +41,7 @@ export const PCHUM_BEN_DAYS_PART1: PchumBenDay[] = [
     description:
 'Cultivating generosity through sharing food with neighbors, vulnerable community members, and offering alms to monks.',
     khmerDescription:
-'ការបណ្តុះចិត្តទានតាមរយៈការចែករំលែកម្ហូបអាហារដល់អ្នកជិតខាង ជនងាយរងគ្រោះក្នុងសហគមន៍ និងការប្រគេនទានដល់ព្រះសង្ឃ',
+'ការបណ្តុះចិត្តទានតាមរយៈការចែករំលែកម្ហូបអាហារដល់អ្នកជិតខាង ជនងាយរងគ្រោះក្នុងសហគមន៍ និងការប្រគេនទេយ្យទានដល់ព្រះសង្ឃ',
     tradition:
 'Generosity (ទាន / Dana) is the foundation of Buddhist merit-making. Offerings given with a pure, unattached mind bring deep inner joy.',
     khmerTradition:

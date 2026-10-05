@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Download, Share2, Check, Sparkles, Heart } from 'lucide-react';
 import { useI18n } from '../../i18n/i18n-context';
-import { formatBuddhistEraYear } from '../../domain/services/calendar-service';
+import { formatBuddhistEraYear, toKhmerDigits } from '../../domain/services/calendar-service';
 
 interface CompletionBadgeCardProps {
   completedCount: number;
@@ -19,7 +19,7 @@ export const CompletionBadgeCard: React.FC<CompletionBadgeCardProps> = ({
   const handleShare = async () => {
     const text =
       locale === 'kh'
-        ? 'ក្រុមគ្រួសារយើងបានបំពេញបេសកកម្មប្រពៃណីភ្ជុំបិណ្ឌជោគជ័យ! 🪷 ដំណើរបុណ្យភ្ជុំបិណ្ឌឌីជីថល'
+        ? 'ក្រុមគ្រួសារយើងបានរួមគ្នាបំពេញកុសលប្រពៃណីភ្ជុំបិណ្ឌពេញបរិបូរណ៍ 🪷 ដំណើរបុណ្យភ្ជុំបិណ្ឌ'
         : 'Our family completed all Pchum Ben traditions! 🪷 Digital Pchum Ben Journey';
 
     if (navigator.share) {
@@ -108,7 +108,7 @@ export const CompletionBadgeCard: React.FC<CompletionBadgeCardProps> = ({
     // Cultural Motto
     ctx.fillStyle = '#78350f';
     ctx.font = 'bold 24px "Kantumruy Pro", sans-serif';
-    ctx.fillText('« រលឹកអតីតកាល • អបអរបច្ចុប្បន្នកាល • បន្តប្រពៃណីទៅអនាគត »', 600, 320);
+    ctx.fillText('« រំលឹកគុណដូនតា • សាងកុសលបច្ចុប្បន្ន • ថែរក្សាប្រពៃណីខ្មែរ »', 600, 320);
 
     ctx.fillStyle = '#815c48';
     ctx.font = 'italic 18px "Inter", serif';
@@ -130,7 +130,11 @@ export const CompletionBadgeCard: React.FC<CompletionBadgeCardProps> = ({
 
     ctx.fillStyle = '#732138';
     ctx.font = 'bold 22px "Kantumruy Pro", sans-serif';
-    ctx.fillText(`✨ បានបំពេញប្រពៃណីគ្រួសារ ${completedCount} / ${total} យ៉ាងបរិបូណ៌`, 600, 516);
+    const progressCountStr =
+      locale === 'kh'
+        ? `${toKhmerDigits(completedCount)} / ${toKhmerDigits(total)}`
+        : `${completedCount} / ${total}`;
+    ctx.fillText(`✨ បានបំពេញប្រពៃណីគ្រួសារ ${progressCountStr} យ៉ាងបរិបូរណ៍`, 600, 516);
 
     // Bottom Decorative Divider
     ctx.strokeStyle = '#ca8a04';
@@ -228,7 +232,9 @@ export const CompletionBadgeCard: React.FC<CompletionBadgeCardProps> = ({
         {/* Achievement Badge Pill */}
         <div className="inline-flex items-center gap-1.5 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-lotus-100/90 border border-lotus-300 text-lotus-900 text-[11px] sm:text-xs font-bold shadow-2xs font-khmer max-w-full">
           <Heart className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-lotus-600 fill-lotus-600 flex-shrink-0" />
-          <span className="truncate">បានបំពេញប្រពៃណី {completedCount} / {total} យ៉ាងបរិបូណ៌</span>
+          <span className="truncate">
+            បានបំពេញប្រពៃណី {locale === 'kh' ? `${toKhmerDigits(completedCount)} / ${toKhmerDigits(total)}` : `${completedCount} / ${total}`} យ៉ាងបរិបូរណ៍
+          </span>
         </div>
 
         {/* Traditional Merit Seal */}
@@ -263,7 +269,7 @@ export const CompletionBadgeCard: React.FC<CompletionBadgeCardProps> = ({
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 rounded-xl sm:rounded-2xl bg-white hover:bg-warmth-100 text-warmth-900 border border-warmth-300 font-semibold text-xs sm:text-sm shadow-2xs transition active:scale-95 font-khmer cursor-pointer"
         >
           {copied ? <Check className="w-4 h-4 text-emerald-600" /> : <Share2 className="w-4 h-4 text-warmth-700" />}
-          <span>{copied ? 'បានចម្លងតំណភ្ជាប់!' : t('action.share')}</span>
+          <span>{copied ? (locale === 'kh' ? 'បានចម្លងតំណភ្ជាប់រួចរាល់' : 'Link Copied!') : t('action.share')}</span>
         </button>
       </div>
     </div>

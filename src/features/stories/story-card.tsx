@@ -3,6 +3,7 @@ import { Clock, BookOpen, Crown, Flame, Utensils, Users, Sparkles } from 'lucide
 import { CulturalStory } from '../../domain/entities/story';
 import { Badge } from '../../components/ui/badge';
 import { useI18n } from '../../i18n/i18n-context';
+import { toKhmerDigits } from '../../domain/services/calendar-service';
 
 interface StoryCardProps {
   story: CulturalStory;
@@ -29,7 +30,13 @@ export const StoryCard: React.FC<StoryCardProps> = ({ story, onRead }) => {
             <IconComponent className="w-5 h-5" />
           </div>
           <Badge variant="lotus" size="sm">
-            {story.category}
+            {story.category === 'ORIGIN'
+              ? (locale === 'kh' ? 'ប្រវត្តិដើម' : 'Origins')
+              : story.category === 'RITUAL'
+              ? (locale === 'kh' ? 'ពិធីសាសនា' : 'Rituals')
+              : story.category === 'FOOD'
+              ? (locale === 'kh' ? 'នំប្រពៃណី' : 'Delicacies')
+              : (locale === 'kh' ? 'បុព្វការីជន' : 'Ancestors')}
           </Badge>
         </div>
 
@@ -43,9 +50,13 @@ export const StoryCard: React.FC<StoryCardProps> = ({ story, onRead }) => {
       </div>
 
       <div className="flex items-center justify-between pt-3 border-t border-warmth-100">
-        <div className="flex items-center gap-1.5 text-xs text-warmth-500 font-medium">
+        <div className="flex items-center gap-1.5 text-xs text-warmth-500 font-medium font-khmer">
           <Clock className="w-3.5 h-3.5" />
-          <span>{story.readTimeMinutes} នាទី</span>
+          <span>
+            {locale === 'kh'
+              ? `${toKhmerDigits(story.readTimeMinutes)} នាទី`
+              : `${story.readTimeMinutes} mins`}
+          </span>
         </div>
 
         <button

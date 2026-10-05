@@ -69,7 +69,7 @@ export const CountdownCard: React.FC = () => {
           {countdown.status === 'ongoing' && (
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 border border-emerald-300 text-emerald-800 text-xs font-semibold animate-pulse">
               <Flame className="w-3.5 h-3.5 text-emerald-600 fill-emerald-600" />
-              <span>កំពុងប្រារព្ធ (Active Festival)</span>
+              <span>{locale === 'kh' ? 'កំពុងប្រារព្ធឡើង' : 'Active Festival'}</span>
             </span>
           )}
         </div>

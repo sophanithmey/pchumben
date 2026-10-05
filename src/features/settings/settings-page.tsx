@@ -49,7 +49,7 @@ export const SettingsPage: React.FC = () => {
                   : 'bg-warmth-50 border-warmth-200 text-warmth-700 hover:bg-white'
               }`}
             >
-              {lang === 'kh' ? '🇰🇭 ភាសាខ្មែរ (Khmer)' : '🇬🇧 English'}
+              {lang === 'kh' ? '🇰🇭 ភាសាខ្មែរ' : '🇬🇧 English'}
             </button>
           ))}
         </div>
@@ -60,20 +60,20 @@ export const SettingsPage: React.FC = () => {
         <div className="flex items-center justify-between text-xs sm:text-sm text-warmth-700 py-1">
           <div className="flex items-center gap-2">
             <Wifi className="w-4 h-4 text-emerald-600" />
-            <span>{t('settings.offlineReady')}</span>
+            <span className="font-khmer">{t('settings.offlineReady')}</span>
           </div>
-          <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-            Active
+          <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 font-khmer">
+            {locale === 'kh' ? 'ដំណើរការ' : 'Active'}
           </span>
         </div>
 
         <div className="flex items-center justify-between text-xs sm:text-sm text-warmth-700 py-1 border-t border-warmth-100 pt-3">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-4 h-4 text-warmth-600" />
-            <span>{t('memory.privacyNotice')}</span>
+            <span className="font-khmer">{t('memory.privacyNotice')}</span>
           </div>
-          <span className="text-xs font-bold text-warmth-700 bg-warmth-100 px-2.5 py-0.5 rounded-full">
-            Private
+          <span className="text-xs font-bold text-warmth-700 bg-warmth-100 px-2.5 py-0.5 rounded-full font-khmer">
+            {locale === 'kh' ? 'ឯកជន' : 'Private'}
           </span>
         </div>
       </div>
@@ -82,8 +82,10 @@ export const SettingsPage: React.FC = () => {
       <div className="bg-white rounded-3xl p-5 sm:p-6 border border-warmth-200/90 shadow-xs space-y-3">
         <div className="flex items-center justify-between">
           <div>
-            <h3 className="text-sm font-bold text-red-900">{t('settings.resetData')}</h3>
-            <p className="text-xs text-warmth-500 mt-0.5">Clear local journey checkmarks</p>
+            <h3 className="text-sm font-bold text-red-900 font-khmer">{t('settings.resetData')}</h3>
+            <p className="text-xs text-warmth-500 mt-0.5 font-khmer">
+              {locale === 'kh' ? 'លុបទិន្នន័យវឌ្ឍនភាពដែលបានកត់ត្រា' : 'Clear local journey checkmarks'}
+            </p>
           </div>
 
           <button

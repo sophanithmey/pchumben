@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <!-- Subtle repeating background tile pattern with Num Ansom & Khmer motifs -->
+  <defs>
+    <linearGradient id="patLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#3d6f30" stop-opacity="0.18" />
+      <stop offset="50%" stopColor="#558b44" stop-opacity="0.25" />
+      <stop offset="100%" stopColor="#2c5324" stop-opacity="0.18" />
+    </linearGradient>
+    <linearGradient id="patTie" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stopColor="#d97706" stop-opacity="0.3" />
+      <stop offset="100%" stopColor="#b45309" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Central Ansom Chrouk motif (diagonal) -->
+  <g transform="translate(80, 80) rotate(-35) translate(-40, -18)">
+    <!-- Leaf Cylinder Body -->
+    <rect x="0" y="4" width="80" height="28" rx="14" fill="url(#patLeaf)" stroke="#2d5223" stroke-width="1.2" stroke-opacity="0.3" />
+    
+    <!-- Bamboo Ties (ខ្សែបន្ទះឫស្សី) -->
+    <path d="M16 4 Q19 18 16 32" stroke="url(#patTie)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M32 4 Q35 18 32 32" stroke="url(#patTie)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M48 4 Q51 18 48 32" stroke="url(#patTie)" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M64 4 Q67 18 64 32" stroke="url(#patTie)" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- End Tie Loops -->
+    <path d="M-4 12 C-8 8 -8 24 -4 20" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M84 12 C88 8 88 24 84 20" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Corner repeats for seamless 160x160 tile -->
+  <!-- Top-Left Corner -->
+  <g transform="translate(0, 0) rotate(-35) translate(-40, -18)">
+    <rect x="0" y="4" width="80" height="28" rx="14" fill="url(#patLeaf)" stroke="#2d5223" stroke-width="1.2" stroke-opacity="0.25" />
+    <path d="M16 4 Q19 18 16 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M32 4 Q35 18 32 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M48 4 Q51 18 48 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M64 4 Q67 18 64 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Bottom-Right Corner -->
+  <g transform="translate(160, 160) rotate(-35) translate(-40, -18)">
+    <rect x="0" y="4" width="80" height="28" rx="14" fill="url(#patLeaf)" stroke="#2d5223" stroke-width="1.2" stroke-opacity="0.25" />
+    <path d="M16 4 Q19 18 16 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M32 4 Q35 18 32 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M48 4 Q51 18 48 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+    <path d="M64 4 Q67 18 64 32" stroke="url(#patTie)" stroke-width="2" stroke-linecap="round" />
+  </g>
+
+  <!-- Little Decorative Rice Grains & Sparkle Accents -->
+  <circle cx="80" cy="18" r="1.5" fill="#ca8a04" opacity="0.35" />
+  <circle cx="80" cy="142" r="1.5" fill="#ca8a04" opacity="0.35" />
+  <circle cx="18" cy="80" r="1.5" fill="#ca8a04" opacity="0.35" />
+  <circle cx="142" cy="80" r="1.5" fill="#ca8a04" opacity="0.35" />
+</svg>

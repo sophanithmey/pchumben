@@ -146,7 +146,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({ isOpen, onClos
     <div
       role="dialog"
       aria-modal="true"
-      aria-label={locale === 'kh' ? 'បញ្ជីមុខម្ហូប និងទំព័រ' : 'Navigation Menu'}
+      aria-label={locale === 'kh' ? 'ម៉ឺនុយរុករក' : 'Navigation Menu'}
       className="fixed inset-0 z-50 overflow-hidden w-screen h-screen h-[100dvh]"
     >
       {/* Dark blur backdrop */}
@@ -253,7 +253,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({ isOpen, onClos
         <div className="p-4 border-t border-warmth-200/80 bg-white/60 space-y-3">
           <div className="flex items-center justify-between">
             <span className="text-xs font-semibold text-warmth-700 font-khmer">
-              {locale === 'kh' ? 'ប្តូរភាសា (Language)' : 'Language'}
+              {locale === 'kh' ? 'ប្តូរភាសា' : 'Language'}
             </span>
             <button
               type="button"

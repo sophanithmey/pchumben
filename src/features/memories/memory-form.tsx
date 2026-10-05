@@ -12,7 +12,7 @@ interface MemoryFormProps {
 }
 
 export const MemoryForm: React.FC<MemoryFormProps> = ({ onSubmit, isSubmitting }) => {
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
 
   const {
     register,
@@ -88,7 +88,9 @@ export const MemoryForm: React.FC<MemoryFormProps> = ({ onSubmit, isSubmitting }
       {/* Date & Privacy */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
-          <label className="block text-xs font-bold text-warmth-800 mb-1">កាលបរិច្ឆេទ (Date)</label>
+          <label className="block text-xs font-bold text-warmth-800 mb-1 font-khmer">
+            {locale === 'kh' ? 'កាលបរិច្ឆេទ' : 'Date'}
+          </label>
           <input
             type="date"
             {...register('date')}

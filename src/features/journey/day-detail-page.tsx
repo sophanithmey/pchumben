@@ -15,6 +15,7 @@ import { usePchumBenJourney } from './use-pchum-ben-journey';
 import { LoadingState } from '../../components/ui/loading-state';
 import { ErrorState } from '../../components/ui/error-state';
 import { useI18n } from '../../i18n/i18n-context';
+import { toKhmerDigits } from '../../domain/services/calendar-service';
 
 type LanguageMode = 'both' | 'kh' | 'en';
 
@@ -360,7 +361,7 @@ export const DayDetailPage: React.FC = () => {
               <div className="min-w-0">
                 {showKhmer && (
                   <h3 className="text-base sm:text-lg font-bold text-lotus-950 font-khmer leading-snug">
-                    ការឆ្លុះបញ្ចាំងផ្លូវចិត្ត
+                    សតិពិចារណា
                   </h3>
                 )}
                 {showEnglish && (
@@ -404,7 +405,7 @@ export const DayDetailPage: React.FC = () => {
           >
             <ChevronLeft className="w-4 h-4" />
             <span>
-              <span className="font-khmer">ថ្ងៃទី {prevDay}</span>
+              <span className="font-khmer">ថ្ងៃទី {toKhmerDigits(prevDay)}</span>
               <span className="text-warmth-400 mx-1">/</span>
               <span>Day {prevDay}</span>
             </span>
@@ -419,7 +420,7 @@ export const DayDetailPage: React.FC = () => {
             className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-lotus-700 hover:text-lotus-900 bg-white px-3 py-1.5 rounded-xl border border-lotus-200 transition shadow-xs ml-auto"
           >
             <span>
-              <span className="font-khmer">ថ្ងៃទី {nextDay}</span>
+              <span className="font-khmer">ថ្ងៃទី {toKhmerDigits(nextDay)}</span>
               <span className="text-lotus-300 mx-1">/</span>
               <span>Day {nextDay}</span>
             </span>

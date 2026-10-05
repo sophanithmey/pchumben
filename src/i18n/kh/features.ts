@@ -2,29 +2,29 @@ export const khFeatures = {
   // Hero & Countdown
 'hero.title':'ភ្ជុំបិណ្ឌ',
 'hero.subtitle':'Pchum Ben',
-'hero.mission':'កម្មវិធីឌីជីថលដើម្បីលើកកម្ពស់ការចូលរួមក្នុងទំនៀមទម្លាប់ប្រពៃណី និងសាមគ្គីភាពគ្រួសារខ្មែរ',
+'hero.mission':'កម្មវិធីឌីជីថលសម្រាប់រួមដំណើរក្នុងពិធីបុណ្យប្រពៃណីជាតិ និងបង្កើនភាពកក់ក្តៅក្នុងរង្វង់គ្រួសារ',
 'countdown.title':'រាប់ថយក្រោយឆ្ពោះទៅកាន់ ភ្ជុំបិណ្ឌ',
 'countdown.days':'ថ្ងៃ',
 'countdown.hours':'ម៉ោង',
 'countdown.minutes':'នាទី',
 'countdown.seconds':'វិនាទី',
-'countdown.ongoing':'ពិធីបុណ្យកំពុងប្រារព្ធឡើង! ថ្ងៃនេះជាថ្ងៃកាន់បិណ្ឌទី',
-'countdown.ended':'បុណ្យភ្ជុំបិណ្ឌបានកន្លងផុតហើយ ជួបគ្នានៅឆ្នាំក្រោយដោយក្ដីសុខសាន្ត!',
+'countdown.ongoing':'ពិធីបុណ្យកំពុងប្រព្រឹត្តទៅ ថ្ងៃនេះជាថ្ងៃកាន់បិណ្ឌទី',
+'countdown.ended':'ពិធីបុណ្យភ្ជុំបិណ្ឌបានបញ្ចប់ដោយបរិបូរណ៍ សូមជួបគ្នានៅរដូវបុណ្យឆ្នាំក្រោយដោយក្តីសុខសាន្ត',
 
   // Progress
 'progress.title':'ដំណើរវឌ្ឍនភាពបុណ្យភ្ជុំបិណ្ឌ',
 'progress.daysCount':'{completed} / {total} ថ្ងៃបានបញ្ចប់',
 'progress.activitiesCompleted':'{count} សកម្មភាពបានបំពេញ',
 'progress.memoriesCreated':'{count} អនុស្សាវរីយ៍បានកត់ត្រា',
-'progress.challengesCompleted':'{count} បេសកកម្មគ្រួសារបានជោគជ័យ',
+'progress.challengesCompleted':'{count} សកម្មភាពគ្រួសារបានសម្រេច',
 
   // Journey
 'journey.title':'ដំណើរបុណ្យភ្ជុំបិណ្ឌ ១៥ ថ្ងៃ',
-'journey.subtitle':'តាមដានថ្ងៃកាន់បិណ្ឌនីមួយៗ ទំនៀមទម្លាប់ ការត្រៀមខ្លួន និងការឆ្លុះបញ្ចាំងពីគុណធម៌',
+'journey.subtitle':'តាមដានថ្ងៃកាន់បិណ្ឌនីមួយៗ ទំនៀមទម្លាប់ ការត្រៀមខ្លួន និងការពិចារណាគុណធម៌',
 'journey.day':'ថ្ងៃទី',
 'journey.tradition':'ទំនៀមទម្លាប់ប្រពៃណី',
 'journey.preparation':'ការរៀបចំទុកជាមុន',
-'journey.reflection':'ការឆ្លុះបញ្ចាំងផ្លូវចិត្ត',
+'journey.reflection':'សតិពិចារណា',
 'journey.todayActivity':'សកម្មភាពប្រចាំថ្ងៃនេះ',
 
   // Activities
@@ -63,10 +63,10 @@ export const khFeatures = {
 'memory.deleteConfirm':'តើអ្នកប្រាកដជាចង់លុបអនុស្សាវរីយ៍នេះចេញពីសួនរបស់អ្នកមែនទេ?',
 
   // Family Challenges
-'family.title':'បេសកកម្មគ្រួសារក្នុងពេលភ្ជុំបិណ្ឌ',
-'family.subtitle':'ពង្រឹងភាពកក់ក្តៅ និងចំណងមិត្តភាពរវាងជំនាន់តាមរយៈសកម្មភាពទាំង ៦ នេះ',
+'family.title':'សកម្មភាពគ្រួសារក្នុងរដូវភ្ជុំបិណ្ឌ',
+'family.subtitle':'បង្កើនភាពកក់ក្តៅ និងចំណងមនោសញ្ចេតនាក្នុងគ្រួសារ តាមរយៈសកម្មភាពទាំង ៦ នេះ',
 'family.progress':'{completed} / {total} បានបញ្ចប់',
-'family.badgeUnlocked':'អបអរសាទរ! ក្រុមគ្រួសារអ្នកបានបំពេញប្រពៃណីភ្ជុំបិណ្ឌយ៉ាងបរិបូណ៌!',
+'family.badgeUnlocked':'សាធុ សាធុ! ក្រុមគ្រួសារលោកអ្នកបានបំពេញកិច្ចបុណ្យភ្ជុំបិណ្ឌពេញបរិបូរណ៍',
 'family.badgeTitle':'🪷 ប័ណ្ណកុសលកតញ្ញូគ្រួសារភ្ជុំបិណ្ឌ',
 'family.generateCard':'បង្កើតប័ណ្ណកុសលកតញ្ញូដើម្បីចែករំលែក',
 
@@ -79,8 +79,8 @@ export const khFeatures = {
 
   // Settings
 'settings.title':'ការកំណត់ និងភាសា',
-'settings.language':'ភាសាបង្ហាញ (Language)',
+'settings.language':'ភាសា',
 'settings.resetData':'កំណត់ទិន្នន័យឡើងវិញ',
 'settings.resetConfirm':'តើអ្នកប្រាកដជាចង់លុបទិន្នន័យវឌ្ឍនភាពទាំងអស់មែនទេ? សកម្មភាពនេះមិនអាចត្រឡប់វិញបានទេ',
-'settings.offlineReady':'កម្មវិធីអាចដំណើរការក្រៅបណ្តាញ (Offline Ready)',
+'settings.offlineReady':'ដំណើរការបានទោះបីគ្មានអ៊ីនធឺណិត',
 };

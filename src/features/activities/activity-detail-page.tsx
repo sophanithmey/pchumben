@@ -6,6 +6,7 @@ import { Badge } from '../../components/ui/badge';
 import { LoadingState } from '../../components/ui/loading-state';
 import { ErrorState } from '../../components/ui/error-state';
 import { useI18n } from '../../i18n/i18n-context';
+import { toKhmerDigits } from '../../domain/services/calendar-service';
 
 export const ActivityDetailPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -80,18 +81,18 @@ export const ActivityDetailPage: React.FC = () => {
 
         {/* Recommended Journey Days */}
         <div className="mt-6 pt-6 border-t border-warmth-100">
-          <div className="flex items-center gap-2 text-xs font-bold text-warmth-800 uppercase tracking-wide mb-3">
+          <div className="flex items-center gap-2 text-xs font-bold text-warmth-800 uppercase tracking-wide mb-3 font-khmer">
             <Calendar className="w-4 h-4 text-lotus-600" />
-            <span>{t('journey.day')} (Recommended Days):</span>
+            <span>{locale === 'kh' ? 'ថ្ងៃកាន់បិណ្ឌដែលណែនាំ ៖' : 'Recommended Journey Days:'}</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {activity.dayNumbers.map((d) => (
               <Link
                 key={d}
                 to={`/journey/${d}`}
-                className="px-3 py-1 rounded-xl bg-warmth-100 hover:bg-lotus-50 text-xs font-semibold text-warmth-800 hover:text-lotus-800 border border-warmth-200/80 transition"
+                className="px-3 py-1 rounded-xl bg-warmth-100 hover:bg-lotus-50 text-xs font-semibold text-warmth-800 hover:text-lotus-800 border border-warmth-200/80 transition font-khmer"
               >
-                {t('journey.day')} {d}
+                {t('journey.day')} {locale === 'kh' ? toKhmerDigits(d) : d}
               </Link>
             ))}
           </div>

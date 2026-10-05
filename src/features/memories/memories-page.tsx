@@ -11,7 +11,7 @@ import { useI18n } from '../../i18n/i18n-context';
 
 export const MemoriesPage: React.FC = () => {
   const { filteredMemories, deleteMemory, isLoading, isError } = useMemoryGarden();
-  const { t } = useI18n();
+  const { t, locale } = useI18n();
   const [viewMode, setViewMode] = useState<'garden' | 'cards'>('garden');
 
   if (isLoading) return <LoadingState />;
@@ -44,10 +44,12 @@ export const MemoriesPage: React.FC = () => {
                   ? 'bg-white text-lotus-700 shadow-xs'
                   : 'text-warmth-600 hover:text-warmth-900'
               }`}
-              title="Garden View"
+              title={locale === 'kh' ? 'មើលជាសួន' : 'Garden View'}
             >
               <Trees className="w-4 h-4" />
-              <span className="hidden sm:inline">Garden</span>
+              <span className="hidden sm:inline font-khmer">
+                {locale === 'kh' ? 'សួនអនុស្សាវរីយ៍' : 'Garden'}
+              </span>
             </button>
             <button
               type="button"
@@ -57,10 +59,12 @@ export const MemoriesPage: React.FC = () => {
                   ? 'bg-white text-lotus-700 shadow-xs'
                   : 'text-warmth-600 hover:text-warmth-900'
               }`}
-              title="Cards View"
+              title={locale === 'kh' ? 'មើលជាកាត' : 'Cards View'}
             >
               <LayoutGrid className="w-4 h-4" />
-              <span className="hidden sm:inline">Cards</span>
+              <span className="hidden sm:inline font-khmer">
+                {locale === 'kh' ? 'កាតអនុស្សាវរីយ៍' : 'Cards'}
+              </span>
             </button>
           </div>
 

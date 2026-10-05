@@ -2,9 +2,9 @@ export const khCommon = {
   // Brand & Slogan
   appName:'បុណ្យភ្ជុំបិណ្ឌ',
   appSubtitle:'ប្រពៃណីជាតិខ្មែរ',
-  sloganLine1:'រលឹកអតីតកាល',
-  sloganLine2:'អបអរបច្ចុប្បន្នកាល',
-  sloganLine3:'បន្តប្រពៃណីទៅអនាគត',
+  sloganLine1:'រំលឹកគុណដូនតា',
+  sloganLine2:'សាងកុសលបច្ចុប្បន្ន',
+  sloganLine3:'ថែរក្សាប្រពៃណីខ្មែរ',
 
   // Navigation
 'nav.home':'ទំព័រដើម',
@@ -21,7 +21,7 @@ export const khCommon = {
 
   // Actions & Buttons
 'action.startJourney':'🪷 ចាប់ផ្តើមដំណើរបុណ្យភ្ជុំបិណ្ឌ',
-'action.learnMore':'ស្វែងយល់អំពីបុណ្យភ្ជុំបិណ្ឌ',
+'action.learnMore':'ស្វែងយល់បន្ថែម',
 'action.viewAllDays':'មើលដំណើរទាំង ១៥ ថ្ងៃ',
 'action.markCompleted':'បានបញ្ចប់',
 'action.markIncomplete':'សម្គាល់ថាមិនទាន់រួច',
@@ -30,7 +30,7 @@ export const khCommon = {
 'action.cancel':'បោះបង់',
 'action.save':'រក្សាទុក',
 'action.share':'ចែករំលែក',
-'action.downloadCard':'ទាញយករូបប័ណ្ណ',
+'action.downloadCard':'ទាញយកប័ណ្ណកុសល',
 'action.copyLink':'ចម្លងតំណភ្ជាប់',
 'action.getDirections':'បង្ហាញផ្លូវ',
 'action.close':'បិទ',
@@ -41,8 +41,8 @@ export const khCommon = {
   // Status & Common States
 'status.completed':'បានបញ្ចប់',
 'status.current':'ថ្ងៃនេះ',
-'status.locked':'នៅខាងមុខ',
-'status.available':'អាចចូលបាន',
+'status.locked':'មិនទាន់ដល់',
+'status.available':'អាចចូលរួមបាន',
 'status.loading':'កំពុងផ្ទុកទិន្នន័យ...',
 'status.empty':'មិនទាន់មានទិន្នន័យនៅឡើយទេ',
 'status.error':'មានបញ្ហាក្នុងការផ្ទុកទិន្នន័យ',

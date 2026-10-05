@@ -195,7 +195,7 @@ export const CHECKLIST_ITEMS: ChecklistItem[] = [
     titleKh:'កំសៀវ ឬកែវស្អាតសម្រាប់ពិធីច្រូចទឹក',
     titleEn:'Clean Water Vessel for Dacina Libation',
     detailKh:
-'ដបទឹកស្អាត ឬកំសៀវតូចមួយសម្រាប់ច្រូចទឹកឧទ្ទិសកុសល ពេលព្រះសង្ឃសូត្រធម៌យថា (Yatha...) ដើម្បីបញ្ជូនផលបុណ្យដល់ដូនតា ៧ សន្តាន',
+'ដបទឹកស្អាត ឬកំសៀវតូចមួយសម្រាប់ច្រូចទឹកឧទ្ទិសកុសល ពេលព្រះសង្ឃសូត្រធម៌យថា ដើម្បីបញ្ជូនផលបុណ្យដល់ដូនតា ៧ សន្តាន',
     detailEn:
 'Dedicated clean water kettle or cup to perform the drop-by-drop Dacina water pouring ritual while monks chant Pali merit-transference verses.',
     icon: Droplet,

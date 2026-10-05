@@ -59,7 +59,9 @@ export const PagodasPage: React.FC = () => {
               onChange={(e) => setProvince(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-2xl border border-warmth-200 bg-warmth-50/70 focus:bg-white text-xs sm:text-sm font-medium text-warmth-800 outline-hidden transition cursor-pointer"
             >
-              <option value="all">{t('action.filterAll')} {t('pagodas.provinceFilter')}</option>
+              <option value="all">
+                {t('action.filterAll')} {t('pagodas.provinceFilter')}
+              </option>
               {provinces.map((prov) => (
                 <option key={prov} value={prov}>
                   {prov}
@@ -85,10 +87,7 @@ export const PagodasPage: React.FC = () => {
       )}
 
       {/* Directions modal */}
-      <PagodaDirectionsModal
-        pagoda={selectedPagoda}
-        onClose={() => setSelectedPagoda(null)}
-      />
+      <PagodaDirectionsModal pagoda={selectedPagoda} onClose={() => setSelectedPagoda(null)} />
     </div>
   );
 };

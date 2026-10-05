@@ -77,11 +77,11 @@ export const ACTIVITIES: ActivityData[] = [
     key:'bosBayBen',
     tabLabelKh:'ពិធីបោះបាយបិណ្ឌ',
     tabLabelEn:'Dawn Bos Bay Ben',
-    badgeKh:'ពិធីទាបភ្លឺ • ម៉ោង ៤ ព្រឹក',
+    badgeKh:'ពិធីទៀបភ្លឺ • ម៉ោង ៤ ព្រឹក',
     badgeEn:'Sacred Pre-Dawn • 4:00 AM',
     timeKh:'វេលាម៉ោង ៤:០០ ទៀបភ្លឺ',
     timeEn:'4:00 AM Pre-Dawn',
-    titleKh:'ពិធីបោះបាយបិណ្ឌទាបភ្លឺ',
+    titleKh:'ពិធីបោះបាយបិណ្ឌទៀបភ្លឺ',
     titleEn:'Pre-Dawn Bos Bay Ben Ritual',
     summaryKh:'ដើរប្រទក្សិណ ៣ ជុំព្រះវិហារ បោះដុំបាយបិណ្ឌដើម្បីរំដោះទុក្ខដល់ពពួកប្រេត',
     summaryEn:
@@ -126,7 +126,7 @@ export const ACTIVITIES: ActivityData[] = [
     summaryEn:
 'Gathering in the temple hall to offer nourishing food and pour water to transfer merit',
     descriptionKh:
-'បន្ទាប់ពីព្រះសង្ឃឆាន់ចង្ហាន់រួច ពុទ្ធបរិស័ទទទួលពរជ័យ និងចាប់ផ្តើមពិធីច្រូចទឹក (Chroch Teuk) ទឹកថ្លាបរិសុទ្ធដែលស្រក់ចុះមួយតំណក់ម្តងៗជានិមិត្តរូបនៃការហូរនៃបុណ្យកុសល ទៅកាន់វិញ្ញាណក្ខន្ធបុព្វការីជនទាំង ៧ សន្តាន ឱ្យបានស្ងប់ចិត្ត និងទៅកាន់ទីបរមសុខ',
+'បន្ទាប់ពីព្រះសង្ឃឆាន់ចង្ហាន់រួច ពុទ្ធបរិស័ទទទួលពរជ័យ និងចាប់ផ្តើមពិធីច្រូចទឹក ទឹកថ្លាបរិសុទ្ធដែលស្រក់ចុះមួយតំណក់ម្តងៗជានិមិត្តរូបនៃការហូរនៃបុណ្យកុសល ទៅកាន់វិញ្ញាណក្ខន្ធបុព្វការីជនទាំង ៧ សន្តាន ឱ្យបានស្ងប់ចិត្ត និងទៅកាន់ទីបរមសុខ',
     descriptionEn:
 'After the monastic community finishes the midday meal, devotees gather for chanting and perform the sacred Water Libation (ច្រូចទឹក / Chroch Teuk). The continuous stream of crystal-clear water symbolizes the unbroken transfer of accumulated merit to seven generations of departed loved ones.',
     customs: [
@@ -141,7 +141,7 @@ export const ACTIVITIES: ActivityData[] = [
       },
     ],
     primaryAction: {
-      kh:'ធ្វើពិធីច្រូចទឹកនិម្មិត',
+      kh:'ចូលរួមពិធីច្រូចទឹក',
       en:'Virtual Water Libation',
       link:'/libation',
     },
