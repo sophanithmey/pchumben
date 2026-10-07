@@ -47,6 +47,9 @@ const StoriesPage = lazy(() =>
 const LibationPage = lazy(() =>
   import('../features/libation/libation-page').then((m) => ({ default: m.LibationPage })),
 );
+const BayBenPage = lazy(() =>
+  import('../features/bay-ben/bay-ben-page').then((m) => ({ default: m.BayBenPage })),
+);
 
 const withSuspense = (Component: React.ComponentType) => (
   <Suspense fallback={<LoadingState />}>
@@ -65,6 +68,8 @@ export const router = createBrowserRouter([
       { path: 'activities', element: withSuspense(ActivitiesPage) },
       { path: 'activities/:id', element: withSuspense(ActivityDetailPage) },
       { path: 'libation', element: withSuspense(LibationPage) },
+      { path: 'bay-ben', element: withSuspense(BayBenPage) },
+      { path: 'early-morning', element: <Navigate to="/bay-ben" replace /> },
       { path: 'memories', element: withSuspense(MemoriesPage) },
       { path: 'memories/create', element: withSuspense(CreateMemoryPage) },
       { path: 'family', element: withSuspense(FamilyPage) },

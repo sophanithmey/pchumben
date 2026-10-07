@@ -15,6 +15,7 @@ import {
   Settings,
   Globe,
   ChevronRight,
+  Sunrise,
 } from 'lucide-react';
 import { useI18n } from '../../i18n/i18n-context';
 import { SacredLotus } from '../ui/sacred-lotus';
@@ -33,7 +34,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({ isOpen, onClos
     if (isOpen) {
       onClose();
     }
-  }, [location.pathname]);
+  }, [location.pathname, isOpen, onClose]);
 
   // Handle escape key and body scroll lock
   useEffect(() => {
@@ -78,6 +79,13 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({ isOpen, onClos
           sub: locale === 'kh' ? 'ពិធីច្រូចទឹក និងធម៌បាលី' : 'Water Libation & Chants',
           icon: Droplet,
           iconBg: 'bg-sky-100 text-sky-800',
+        },
+        {
+          to: '/bay-ben',
+          label: t('nav.bayBen'),
+          sub: locale === 'kh' ? 'ពួតបាយបិណ្ឌ និងបោះបាយពេលទៀបភ្លឺ' : 'Pre-dawn rice offering ritual',
+          icon: Sunrise,
+          iconBg: 'bg-amber-100 text-amber-800',
         },
         {
           to: '/activities',

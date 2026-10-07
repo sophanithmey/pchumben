@@ -9,6 +9,7 @@ export const enCommon = {
   // Navigation
   'nav.home': 'Home',
   'nav.journey': '15-Day Journey',
+  'nav.bayBen': 'Bos Bay Ben',
   'nav.activities': 'Activities',
   'nav.stories': 'Stories & Lore',
   'nav.libation': 'Water Libation',
@@ -18,6 +19,9 @@ export const enCommon = {
   'nav.about': 'About Pchum Ben',
   'nav.settings': 'Settings',
   'nav.more': 'More',
+  'nav.rituals': 'Sacred Rituals',
+  'nav.remembrance': 'Family & Memories',
+  'nav.heritage': 'Culture & Pagodas',
 
   // Actions & Buttons
   'action.startJourney': '🪷 Start Pchum Ben Journey',

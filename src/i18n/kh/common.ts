@@ -9,6 +9,7 @@ export const khCommon = {
   // Navigation
 'nav.home':'ទំព័រដើម',
 'nav.journey':'ដំណើរ ១៥ ថ្ងៃ',
+'nav.bayBen':'ពិធីបោះបាយបិណ្ឌ',
 'nav.activities':'សកម្មភាព',
 'nav.stories':'រឿងនិទាន',
 'nav.libation':'ពិធីច្រូចទឹក',
@@ -18,6 +19,9 @@ export const khCommon = {
 'nav.about':'អំពីភ្ជុំបិណ្ឌ',
 'nav.settings':'ការកំណត់',
 'nav.more':'ផ្សេងទៀត',
+'nav.rituals':'ពិធីសាសនា',
+'nav.remembrance':'គ្រួសារ និងការចងចាំ',
+'nav.heritage':'វប្បធម៌ និងវត្តអារាម',
 
   // Actions & Buttons
 'action.startJourney':'🪷 ចាប់ផ្តើមដំណើរបុណ្យភ្ជុំបិណ្ឌ',
